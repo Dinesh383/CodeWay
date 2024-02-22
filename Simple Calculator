@@ -1,4 +1,4 @@
-#Python program to create a simple calculator
+# PYTHON PROGRAM TO CREATE A SIMPLE CALCULATOR
 print("Welcome to simple calculator")
 print("Which operation do you want to perform: ")
 print("1.Addition")
@@ -7,27 +7,29 @@ print("3.Multiplication")
 print("4.Division")
 print("Enter operation number: " ,end="")
 
-operation = input()
 
+operation = input()
+#FOR ADDITION OPERATION
 if operation == "1":
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     print("The sum is: " + str(int(num1)+int(num2)))
-
+#FOR SUBTRACTION OPERATION
 elif operation == "2":
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     print("The difference is: " + str(int(num1)-int(num2)))
-
+#FOR MULTIPLICATION OPERATION
 elif operation == "3":
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     print("The product is: " + str(int(num1)*int(num2)))
-
+#FOR DIVISION OPERATION
 elif operation == "4":
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     print("The result is: " + str(int(num1)/int(num2)))
 
+#FOR INVALID ENTRY
 else:
     print("Invalid entry")
